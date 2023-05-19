@@ -7,6 +7,7 @@ import { useEffect, useState } from 'react';
 
 import prisma from '../../lib/prisma';
 
+//change a small file
 // index.tsx
 export const getStaticProps: GetStaticProps = async () => {
     const food = await prisma?.breakfast.findMany({
